@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuotesGallery</title>
+    <link rel="stylesheet" href="{% static 'cssfiles/demo.css' %}">
+</head>
+
+<body>
+    <h1>Here Is Some Motivational Speaker!</h1>
+    {% if type == 'home' %}
+    <img src="{% static 'images/dhoni.png' %}" alt="Dhoni">
+    {% elif type == 'quotes' %}
+    <div class="list-view">
+        {% for speaker in speakers %}
+        <div class="card">
+            <img src="{% static speaker.images %}" alt="{{ speaker.name }}">
+            <div class="info">
+                <h2>{{ speaker.name }}</h2>
+                <p>{{ speaker.about }}</p>
+                <p><strong>Website:</strong> <a href="{{ speaker.website }}" target="_blank">{{ speaker.website }}</a>
+                </p>
+                <p><strong>Twitter:</strong> {{ speaker.twitter }}</p>
+                <p><strong>Facebook:</strong> {{ speaker.facebook }}</p>
+                <p><strong>Popularity:</strong> {{ speaker.popularity }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% elif type == 'about' %}
+    <img src="{% static 'images/dhoni.png' %}" alt="Dhoni">
+    {% elif type == 'yourquotes' %}
+    <img src="{% static 'images/ashiq.jpg' %}" alt="Ashiq">
+    {% endif %}
+
+</body>
+
+</html>

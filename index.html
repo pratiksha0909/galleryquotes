@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'cssfiles/demo.css'%}">
+</head>
+<body>
+    <header>
+        <div>
+            <span class="banner">Gallery Queto</span>
+        </div>
+        <div class="navbar">
+            <span><a href="">Home</a></span>
+            <span><a href="quotes">Quotes</a></span>
+            <span><a href="about">About</a></span>
+            <span><a href="yourquotes">Your Quotes</a></span>
+            <span><button>ADD Your Quetos</button></span>
+        </div>
+    </header>
+    <div class="image">
+    <img src="{% static 'images/wall.jpg' %}">
+    </div>
+  <article><h1>Here is some book which are good to read<h1></article>
+    
+    <figure>
+        <div class="summer">
+        <img src="{% static 'images/summer.jpg'%}">
+        <figcaption>
+            <h1>The winter story</h1>
+            <p>A Summer Story focuses on 4 main characters which are played by Arya Singhal,
+                Pourush Singh, Rohit Raghavendra and Shivam himself.The series is written 
+                and directed by Jemini, as well as,shot by the cast itself. 
+                The trailer gives a complete young vibe which managed to capture the 
+                lives of how the youth live their lives. Along with the upbeat music we got to 
+                see the wonderful locales of Mumbai which definitely play an appealing factor in the trailer.</p>
+        </figcaption>
+        </div>
+        <div class="winter">
+            <img src="{% static 'images/winter.jpg'%}" alt="">
+            <figcaption>
+                <h1>The winter story</h1>
+                <p>A Summer Story focuses on 4 main characters which are played by Arya Singhal,
+                    Pourush Singh, Rohit Raghavendra and Shivam himself.The series is written 
+                    and directed by Jemini, as well as,shot by the cast itself. 
+                    The trailer gives a complete young vibe which managed to capture the 
+                    lives of how the youth live their lives. Along with the upbeat music we got to 
+                    see the wonderful locales of Mumbai which definitely play an appealing factor in the trailer.</p>
+            </figcaption>
+        </div>
+        <div class ="monsoon">
+            <img src="{% static 'images/monsoon.jpg'%}">
+            <figcaption>
+                <h1>The Monsoon story</h1>
+                <p>A Summer Story focuses on 4 main characters which are played by Arya Singhal,
+                    Pourush Singh, Rohit Raghavendra and Shivam himself.The series is written 
+                    and directed by Jemini, as well as,shot by the cast itself. 
+                    The trailer gives a complete young vibe which managed to capture the 
+                    lives of how the youth live their lives. Along with the upbeat music we got to 
+                    see the wonderful locales of Mumbai which definitely play an appealing factor in the trailer.</p>
+            </figcaption>
+        </div>
+    </figure>
+</body>
+</html>
